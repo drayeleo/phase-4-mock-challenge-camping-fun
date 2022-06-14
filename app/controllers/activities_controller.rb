@@ -15,6 +15,6 @@ class ActivitiesController < ApplicationController
   private
 
   def handle_record_not_found
-    render json: { error: "Activity not found" }, status: :not_found
+    render json: { errors: "Activity not found" }, status: :not_found
   end
 end

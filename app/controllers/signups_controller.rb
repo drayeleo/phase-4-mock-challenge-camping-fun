@@ -16,7 +16,7 @@ class SignupsController < ApplicationController
 
   def handle_record_invalid(invalid)
     render json: {
-             error: invalid.record.errors.full_messages
+             errors: invalid.record.errors.full_messages
            },
            status: :unprocessable_entity
   end
